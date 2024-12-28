@@ -101,7 +101,7 @@ public partial class EditarEstudiante : ContentPage
             estudianteActualizado.Curso = new Curso { Nombre = EditCursoPicker.SelectedItem.ToString() };
             estudianteActualizado.Estado = EditEstadoSwitch.IsToggled;
             await client.Child("Estudiantes").Child(estudianteActualizado.Id).PutAsync(estudianteActualizado);
-            await DisplayAlert("Exito", "El eestudiante se ha modificado de manera exitoza", "Ok");
+            await DisplayAlert("Exito", "El estudiante se ha modificado de manera exitoza", "Ok");
             await Navigation.PopAsync();
         }
         catch (Exception ex)
