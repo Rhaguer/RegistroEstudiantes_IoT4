@@ -49,10 +49,11 @@ namespace RegistroEmpleados.AppMovil
                         new Curso { Nombre = "6to Básico" },
                         new Curso { Nombre = "7mo Básico" },
                         new Curso { Nombre = "8vo Básico" },
-                        new Curso { Nombre = "1er Medio" },
+                        new Curso { Nombre = "1ro Medio" },
                         new Curso { Nombre = "2do Medio" },
                         new Curso { Nombre = "3ero Medio" },
                         new Curso { Nombre = "4to Medio" }
+
                     };
 
                     foreach (var curso in listaDeCursos)

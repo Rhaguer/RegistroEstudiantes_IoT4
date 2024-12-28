@@ -94,7 +94,7 @@ public partial class ListarEstudiante : ContentPage
         else
         {
             bool confirmacion = await DisplayAlert("Confirmacion",
-                $"Esta seguro de Deshabilitar al estudiante {estudiante.NombreCompleto}", "Si", "No");
+                $"Esta seguro de Deshabilitar a {estudiante.NombreCompleto}", "Si", "No");
             if (confirmacion)
             {
                 try

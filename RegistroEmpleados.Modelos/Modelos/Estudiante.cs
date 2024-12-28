@@ -15,7 +15,7 @@ namespace RegistroEmpleados.Modelos.Modelos
         public string? SegundoApellido { get; set; }
         public string? CorreoElectronico { get; set; }
         public int? Edad { get; set; }
-        public DateTime? FechaInsripcion { get; set; }
+        public DateTime FechaInsripcion { get; set; }
         public Curso? Curso { get; set; }
         public bool? Estado { get; set; }
         public string? NombreCompleto => $"{PrimerNombre} {PrimerApellido}";

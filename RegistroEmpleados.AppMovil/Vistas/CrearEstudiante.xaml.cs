@@ -6,9 +6,9 @@ namespace RegistroEmpleados.AppMovil.Vistas;
 
 public partial class CrearEstudiante : ContentPage
 {
-    FirebaseClient client = new FirebaseClient("https://registroempleados-433b8-default-rtdb.firebaseio.com/");
-    public List<Curso> Cursos { get; set; } = new List<Curso>();
-    public CrearEstudiante()
+	FirebaseClient client = new FirebaseClient("https://registroempleados-433b8-default-rtdb.firebaseio.com/");
+	public List<Curso> Cursos { get; set; } = new List<Curso>();
+	public CrearEstudiante()
 	{
 		InitializeComponent();
 		ListarCursos();
@@ -37,13 +37,14 @@ public partial class CrearEstudiante : ContentPage
 		};
 		try
 		{
-            await client.Child("Estudiantes").PostAsync(estudiante);
-            await DisplayAlert("Exito", $"El estudiante {estudiante.PrimerNombre} {estudiante.PrimerApellido} fue guardado correctamente", "OK");
-            await Navigation.PopAsync();
-        }
-		catch(Exception ex)
-        {
-            await DisplayAlert("Error", ex.Message, "OK");
-        }
-    }
+			await client.Child("Estudiantes").PostAsync(estudiante);
+			await DisplayAlert("Éxito", $"El estudiante {estudiante.PrimerNombre} {estudiante.PrimerApellido} fue guardado correctamente", "OK");
+			await Navigation.PopAsync();
+		}
+		catch (Exception ex)
+		{
+			await DisplayAlert("Error", $"Ocurrió un error al guardar el estudiante: {ex.Message}", "OK");
+		}
+	}
 }
+

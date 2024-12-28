@@ -33,7 +33,7 @@
         
         <Label Text="Estado:"/>
         <Switch x:Name="EditEstadoSwitch"
-             IsToggled="True"/>
+        IsToggled="True"/>
 
         <Button Text="Guardar"
             x:Name="guardarButton"
