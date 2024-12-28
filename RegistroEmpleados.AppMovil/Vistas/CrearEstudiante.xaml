@@ -31,6 +31,10 @@
         
         <DatePicker x:Name="fechaInscripcionPicker"/>
         
+        <Label Text="Estado:"/>
+        <Switch x:Name="EditEstadoSwitch"
+             IsToggled="True"/>
+
         <Button Text="Guardar"
             x:Name="guardarButton"
             Clicked="guardarButton_Clicked"/>
