@@ -6,7 +6,7 @@ namespace RegistroEmpleados.AppMovil.Vistas;
 
 public partial class CrearEstudiante : ContentPage
 {
-    FirebaseClient client = new FirebaseClient("https://registroempleados-7d347-default-rtdb.firebaseio.com/");
+    FirebaseClient client = new FirebaseClient("https://registroempleados-433b8-default-rtdb.firebaseio.com/");
     public List<Curso> Cursos { get; set; } = new List<Curso>();
     public CrearEstudiante()
 	{

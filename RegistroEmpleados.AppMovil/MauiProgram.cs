@@ -33,7 +33,7 @@ namespace RegistroEmpleados.AppMovil
             try
             {
 
-                FirebaseClient client = new FirebaseClient("https://registroempleados-7d347-default-rtdb.firebaseio.com/");
+                FirebaseClient client = new FirebaseClient("https://registroempleados-433b8-default-rtdb.firebaseio.com/");
 
                 var cursos = await client.Child("Cursos").OnceAsync<Curso>();
 
